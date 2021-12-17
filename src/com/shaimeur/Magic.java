@@ -6,4 +6,8 @@ public class Magic extends Cards{
         super(cardName,cost);
         this.description = description;
     }
+    @Override
+    public String toString() {
+        return description  ;
+    }
 }

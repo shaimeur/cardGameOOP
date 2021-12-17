@@ -1,6 +1,7 @@
 package com.shaimeur;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
@@ -21,9 +22,9 @@ public class Main {
         Creature angel = new Creature("Kira",100,90,190);
         Creature saitama = new Creature("Saitama",1000,1000,1090);
 
-        Magic blackHole = new Magic("BlackHole",120,"ALL OUT");
+        Magic blackHole = new Magic("BlackHole",120,"BLACK OUT");
         Magic ragnarock = new Magic("Ragnarock",130,"ALL OUT");
-        Magic allForOne = new Magic("ALLForOne",130,"ALL OUT");
+        Magic allForOne = new Magic("ALLForOne",130,"ALLMEIGHT");
 
 
         // add land to deck
@@ -44,15 +45,37 @@ public class Main {
         deck.add(ragnarock);
         deck.add(allForOne);
 
+        ArrayList<Cards> deck2 = (ArrayList<Cards>) deck.clone();
+
+        Collections.shuffle(deck);
+
+        Collections.shuffle(deck2);
 
 
-        System.out.println(deck);
 
 
          Player player1 = new Player(100,"luffy",deck);
          Player player2 = new Player(100,"Kaido",deck);
 
 
+        System.out.println(player1.getDeck(deck));
+        System.out.println(player2.getDeck(deck2));
+
+
+/*
+        public  void starGame(Cards cards){
+
+
+            for (int i = 0; i <12 ; i++) {
+                if (!(player1.getDeck(deck1[i]) == player2.getDeck(deck2[i]))){
+                        if (player1.)
+                }
+            }
+
+
+        }
+
+ */
 
 
 

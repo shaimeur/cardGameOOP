@@ -8,4 +8,8 @@ public class Creature extends Cards{
         this.PA = PA;
         this.PV = PV;
     }
+    @Override
+    public String toString() {
+        return PA + " " + PV;
+    }
 }

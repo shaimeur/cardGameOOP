@@ -20,6 +20,7 @@ public class Player {
 
             this.deck = deck;
 
+
     }
 
     public ArrayList<Cards> getDeck(ArrayList<Cards> deck) {
@@ -43,9 +44,10 @@ public class Player {
     }
 
 
-
-    //public String toString() {
-    //}
+    @Override
+    public String toString() {
+        return score + " "  + name + " " + deck ;
+    }
 
 
 
@@ -64,9 +66,7 @@ public class Player {
 
 
 /*
-    public  void play(){
 
-    }
 
     public  void getDeck(){
         ArrayList<Cards> deck = new ArrayList<Cards>(12);

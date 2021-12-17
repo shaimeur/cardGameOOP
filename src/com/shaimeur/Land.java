@@ -10,6 +10,10 @@ public class Land extends Cards{
         this.color = color;
         this.size = size;
     }
+    @Override
+    public String toString() {
+        return color + " " + size;
+    }
 
     }
 
