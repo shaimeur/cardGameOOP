@@ -8,17 +8,16 @@ public class Player {
     private ArrayList<Cards> deck = new ArrayList<Cards>();
 
 
-    public Player(int score,String name,ArrayList<Cards> deck) {
+    public Player(int score, String name, ArrayList<Cards> deck) {
         this.setScore(score);
         this.setName(name);
         this.setDeck(deck);
     }
 
 
+    public void setDeck(ArrayList<Cards> deck) {
 
-    public  void setDeck(ArrayList<Cards> deck){
-
-            this.deck = deck;
+        this.deck = deck;
 
 
     }
@@ -46,7 +45,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return score + " "  + name + " " + deck ;
+        return score + " " + name + " " + deck;
     }
 
 
